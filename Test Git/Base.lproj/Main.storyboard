@@ -16,17 +16,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJ7-EA-hc6">
-                                <rect key="frame" x="184" y="433" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="181" y="433" width="52" height="30"/>
+                                <state key="normal" title="Boton 1"/>
                                 <connections>
                                     <action selector="goToTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t4h-N4-JMi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gi6-NF-j12">
+                                <rect key="frame" x="180" y="473" width="54" height="30"/>
+                                <state key="normal" title="Boton 2"/>
+                                <connections>
+                                    <action selector="printTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="chc-Sw-NHm"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="Gi6-NF-j12" firstAttribute="centerX" secondItem="vJ7-EA-hc6" secondAttribute="centerX" id="0PL-cN-oZE"/>
                             <constraint firstItem="vJ7-EA-hc6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D2U-K5-uAp"/>
                             <constraint firstItem="vJ7-EA-hc6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="cdP-ku-8HN"/>
+                            <constraint firstItem="Gi6-NF-j12" firstAttribute="firstBaseline" secondItem="vJ7-EA-hc6" secondAttribute="baseline" constant="40" id="iod-rt-CmL"/>
+                            <constraint firstItem="Gi6-NF-j12" firstAttribute="top" secondItem="vJ7-EA-hc6" secondAttribute="bottom" constant="40" id="v7v-1P-AxZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
